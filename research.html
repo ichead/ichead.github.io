@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Research | Junguk Cho</title>
+<link rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="functions.js">
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 16pt;
+	font-weight: bold;
+}
+.style2 {
+	font-size: 12pt;
+	font-weight: bold;
+}
+a:hover {
+	color: #999999;
+}
+
+-->
+</style>
+</head>
+
+<body>
+<div id="header">
+		<div id="headerpic"><img src="images/cloud1.gif" width="800" height="153" /></div>
+</div>
+<div id="menu">
+	<ul id="menulist">
+    	<li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="biography.html">Biography</a></li>
+        <li><a href="pictures.html">Pictures</a></li>
+    </ul>
+</div>
+<div id="wrapper">
+  <p class="style1">Research</p>
+  <p><span class="style2">Research Interests</span></p>
+  <p>My scientific research interests include the <strong>embedded systems</strong> (FPGA architectures, DSP systems,  microprocessor systems, automation systems, specific purposed systems), <strong>image processing</strong> (image processing algorithms, image processing acceleration, image enhancement, low-level image processing, object tracking, face detection, color segmentation, image analysis),  <strong>motion control</strong> (motion control algorithms, motion controllers, robotics, velocity profile generation, trajectory planning, open architecture systems, manufacturing systems), and <strong>system on a chip</strong> (image processing acceleration, video interface, motion control, high speed interface, memory interface, soft processor cores, IP cores).</p>
+  <p>&nbsp;</p>
+  <p class="style2">Research Symmary</p>
+  <table width="900" border="0" align="center">
+    <tr>
+      <td><strong>Color Classification  System</strong></td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="images/color_classification_01.jpg" width="247" height="160" /><img src="images/color_classification_02.jpg" width="213" height="160" /><img src="images/color_classification_03.jpg" width="213" height="160" /></div></td>
+    </tr>
+    <tr>
+      <td>- Developed an FPGA based real-time color classification system.<br />
+        - Created the color classifier offline by feeding the training images to AdaBoost.<br />
+        - Designed a RGB to HSV color space converter using Verilog HDL. <br />
+        - Designed a hardware architecture for increased performance of color classification using Verilog HDL.<br />
+        - Implemented a color classification system on a Virtex-5 FPGA which is capable of processing the image (640&times;480 pixels) at speeds up to 233 fps and has up to 598&times; performance gain over an equivalent software implementation. </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><strong>Face Detection System Using Haar Classifiers</strong></td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="images/face_detection_01.jpg" width="254" height="160" /><img src="images/face_detection_02.jpg" width="242" height="160" /><img src="images/face_detection_03.jpg" width="212" height="160" /></div></td>
+    </tr>
+    <tr>
+      <td><p>- Developed an FPGA based real-time face detection system.<br />
+          - Designed an architecture for face detection using Haar classifiers using Verilog HDL.<br />
+          - Designed a down-sampling image with fixed window mask and an integral image window buffer using Verilog HDL.<br />
+          - Implemented single and multiple parallel classifiers on a Virtex-5 FPGA which are capable of processing the image at speeds of up to 84 fps. <br />
+          - Implemented a face detection system has up to 84&times; performance gain over an equivalent software implementation.</p>      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><strong>Motion-Vision Integrated Embedded System </strong></td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="images/motion_vision_01.jpg" width="160" height="152" /><img src="images/motion_vision_02.gif" width="180" height="151" /><img src="images/motion_vision_03.jpg" width="208" height="160" /></div></td>
+    </tr>
+    
+    <tr>
+      <td><p>	- Developed an FPGA and ARM based motion-vision integrated embedded system.<br />
+        	- Designed a multiple axis motion control system including velocity profile generation, interpolation, and PID control using VHDL.<br />
+        	- Designed a low-level image processing system including binary thresholding, morphology, and binary large object operation using VHDL. <br />
+        	- Designed an embedded  system including operating system, user interface, and libaries.<br />
+        	- Implemented a motion-vision integrated embedded system on a Virtex-4 FPGA whic distinguishes objects in images obtained from a camera, selects each object by a touch-screen user interface, and draw the selected object on the paper by motion control of an x-y table.<br />
+   	        <br />
+      </p>      </td>
+    </tr>
+  </table>
+  <br />
+  <table width="900" border="0" align="center">
+    <tr>
+      <td><strong>Visual Tracking System Using Adaptive Color Histograms </strong></td>
+    </tr>
+    <tr>
+      <td height="16"><p align="center"><img src="images/color_tracking_01.gif" width="151" height="151" /><img src="images/color_tracking_02.gif" width="220" height="151" /><img src="images/color_tracking_03.jpg" width="208" height="160" /></p>        </td>
+    </tr>
+    
+    <tr>
+      <td>	<p>- Developed hardware acceleration of visual tracking using color histograms for intelligent robots. <br />
+        	- Developed a real-time visual tracking system that can improve the performance of pattern matching.<br />
+      - Designed a window based image processing structure to provide real-time visual tracking performance using VHDL.<br />
+      - Designed an adaptive color histograms  to provide adaptability to slow appearace changes using VHDL.<br />
+      - Implemented visual tracking system on a Virtex-4 FPGA which is capable of processing the images (640&times;480 pixels) at speeds of up to 81 fps and has up to 540&times; performance gain over an equivalent software implementation.</p>      </td>
+    </tr>
+  </table>
+  <br />
+  <table width="900" border="0" align="center">
+    <tr>
+      <td><strong>Real-Time Active Visual Tracking System </strong></td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="images/active_tracking_01.jpg" width="213" height="151" /><img src="images/active_tracking_02.jpg" width="330" height="160" /></div></td>
+    </tr>
+    
+    <tr>
+      <td height="60"><p>	- Developed hardware acceleration of active visual tracking using projection profile matching and a particle filter for intelligent robots.<br />
+        - Designed a projection profile matching structure to compensate background motion of an active camera using VHDL.<br />
+          - Designed a particle filter structure to track a moving object in the cluttered environment using VHDL.<br />
+          - Implemented an active visual tracking system on a Virtex-II FPGA which tracks a moving object in the cluttered environment using an active camera in such a way to track a moving object for a longer time interval and over a wider space range.<br />
+            - Implemented an active visual tracking system  which is capable of processing the images (640&times;480 pixels) at speeds of up to 39 fps.</p>      </td>
+    </tr>
+  </table>
+  <br />
+  <table width="900" border="0" align="center">
+    <tr>
+      <td><strong>Real-Time Object Tracking System Using Particle Filters </strong></td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="images/object_tracking_01.jpg" width="218" height="151" /><img src="images/object_tracking_02.jpg" width="316" height="160" /></div></td>
+    </tr>
+    
+    <tr>
+      <td height="142">	<p>- Developed hardware acceleration of multiple objects tracking using priority based probabilistic data association particle filters for intelligent robots.<br />
+        - Designed a priority based probabilistic data association structure to determine the association between the observations and objects using VHDL.<br />
+      - Designed parallel particle filters structure to update the existing trackers with the new measurements after their association using VHDL.<br />
+      - Implemented a multiple objects tracking system on a Virtex-II FPGA which tracks multiple objects in a cluttered environment simultaneously. It is capable of processing the images (640&times;480 pixels) at speeds of up to 56 fps.</p>      </td>
+    </tr>
+  </table>
+  <br />
+  <table width="900" border="0" align="center">
+    <tr>
+      <td><strong>Real-Time Histogram Equalization with Automatic Gain Control  </strong></td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="images/histogram_equalization_01.jpg" width="210" height="147" /><img src="images/histogram_equalization_02.jpg" width="190" height="134" /><img src="images/histogram_equalization_03.jpg" width="180" height="134" /></div></td>
+    </tr>
+    <tr>
+      <td>	<p>- Developed hardware acceleration of histogram equalization with automatic gain control for image enhancement.<br />
+        - 
+        Designed an automatic gain control structure to stretch the dynamic range of the image to the whole gray level range using VHDL.<br />
+        - Designed a histogram equalization structure to enhance the image contrast after automatic gain control using VHDL.<br />
+      - Implemented a histogram equalization system with automatic gain control on a Virtex-II FPGA which is capable of processing the images (640&times;480 pixels) at speeds of up to 122 fps and has up to 12&times; and 129 &times; performance gains over an equivalent software implementation on Pentium 4 and PXA270 processors respectively.</p>      </td>
+    </tr>
+  </table>
+  <br />
+  <table width="900" border="0" align="center">
+    <tr>
+      <td><strong>Multiple Axis Motion Control System </strong></td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="images/multiple_axis_01.jpg" width="204" height="154" /><img src="images/multiple_axis_02.jpg" width="220" height="162" /><img src="images/multiple_axis_03.gif" width="190" height="164" /></div></td>
+    </tr>
+    <tr>
+      <td>	<p>- Developled FPGA based multiple axis motion control system for robotic manipulators.<br />
+          - 
+        Designed linear, smooth, sinusoidal, asymmetric,  and arbitrary velobity profiles generation using VHDL.<br />
+        - Designed various interpolation including line, circle, arch, and spline using VHDL.<br />
+        - Designed kinematics and inverse-kinematics usign VHDL.<br />
+        - Designed PID closed loop control with feedback counters using VHDL. <br />
+          - Designed various motor drivers including step, AC, and DC motors (2-channel, 16-bit digital, PWM).<br />
+      - Implemented a multiple axis motion contol system on a Virtex-II FPGA that generates various velocity profiles, performs various interpolation, performs kinematics and inverse-kinematics, and communicates to host PC through PCI bus. </p>      </td>
+    </tr>
+  </table>
+  <br />
+  <table width="900" border="0" align="center">
+    <tr>
+      <td><strong>Motion Control Chip to Generate Velocity Profiles of Desired Characteristics </strong></td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="images/motion_control_01.jpg" width="217" height="134" /><img src="images/motion_control_02.jpg" width="200" height="142" /><img src="images/motion_control_03.jpg" width="249" height="135" /></div></td>
+    </tr>
+    <tr>
+      <td>	<p>- Developled FPGA based motion control chip to generate various velocity profiles for motors. <br />
+        	- Designed linear, smooth, sinusoidal, asymmetric,  and arbitrary velobity profiles generation using VHDL.<br />
+        	- Designed PID closed loop control with feedback counters using VHDL.<br />
+        	- 
+       	  Designed PCI interface to communicate to host PC <br />
+          - Im plemented a motion control chip on a Spartan-IIE FPGA to generate velocity profiles of desired characteristics according given tasks. </p>      </td>
+    </tr>
+  </table>
+  <br />
+  <table width="900" border="0" align="center">
+    <tr>
+      <td><strong>High Performance Motion Controller </strong></td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="images/high_motion_01.jpg" width="199" height="132" /><img src="images/high_motion_02.jpg" width="220" height="142" /><img src="images/high_motion_03.jpg" width="189" height="142" /></div></td>
+    </tr>
+    <tr>
+      <td>	<p>- Designed an open architecture motion controller using a TMS320C6711 DSP.<br />
+      - Implemented a system that has an open architecture including IEEE-NEMI based motion libraries, flexible library functions, and flexible GUI menus, generates linear, smooth, sinusoidal, asymmetric, and arbitrary velocity profiles, performs various interpolation including line, circle, arch, and spline, performs kinematics and inverse-kinematics, performs PID control with feedback counters, and has step, AD, DC motor drivers.<br />
+        </p>      </td>
+    </tr>
+  </table>
+  <br />
+  <table width="900" border="0" align="center">
+    <tr>
+      <td><strong>Low-Cost Timing Controller for Inspecting Small Components</strong> </td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="images/timing_control_01.jpg" width="227" height="170" /><img src="images/timing_control_02.jpg" width="210" height="179" /><img src="images/timing_control_03.jpg" width="134" height="179" /></div></td>
+    </tr>
+    
+    <tr>
+      <td>	- Designed a precision timing controller for MLCC inspection system using 80C196 microprocessors.<br />
+   	  - Developed a system which consists of dual microprocessors and its own memory and peripherals. Each processor performs its own task and communicates to each other. It can control precision timing to grab images, operate value, and detect sensors. It applied a real MLCC inspection system in industry.</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p><span class="style2">Accomplished Projects</span></p>
+  <p>[P1]    <strong>High Performance Motion Controller</strong> (11/1999~10/200) : Development of Leading Technology Program funded by the Ministry of Commerce, Industry and Energy  of Korea.</p>
+  <p>[P2] <strong>Synchronization System for High Speed Inspection of Small Components</strong> (05/2002~02/2003) : Technical Innovation for Small and Medium Business Program  funded by the Small and Medium Business Administration of Korea.</p>
+  <p>[P3] <strong>Motion Control System for Step Motor</strong> (09/2002~08/2003) : Transformation of New Technology Program funded by the Ministry of Commerce, Industry and Energy  of Korea.</p>
+  <p>[P4] <strong>Pentium Processor Based Embedded System</strong> (04/2003~03/2004) : Technical Innovation for Small and Medium Business Program funded by the Small and Medium Business Administration of Korea.</p>
+  <p>[P5] <strong>Automatic Frequency Control System for Parts Feeder</strong> (06/2003~02/2004) : Technical Innovation for Small and Medium Business Program funded by the Small and Medium Business Administration of Korea.</p>
+  <p>[P6] <strong>Intelligent SoC (System on a Chip) for Recognition/Learning Engine</strong> (10/2003~03/2005) : 21st Century Frontier R&amp;D Program funded by the Ministry of Science and Technology and the Ministry of Commerce, Industry and Energy of Korea.</p>
+  <p>[P7] <strong>Embedded System for ECU (Electronic Control Unit)</strong> (08/2004~05/2009) : Next Generation Vehicle Technology Program funded by the Ministry of Commerce, Industry and Energy of Korea.</p>
+  <p>[P8] <strong>Precision Dispensing Control System for Next Generation LCD Manufacturing Equipment</strong> (04/2005~03/2006) : Technical Innovation for Small and Medium Business Program funded by the Small and Medium Business Administration of Korea.</p>
+  <p>[P9] <strong>Motion-Vision Integrated Embedded System</strong> (09/2005~08/2008) : Lab of Excellency Project funded by the Ministry of Education and Human Resources Development, the Ministry of Commerce, Industry and Energy, and the Ministry of Labor of Korea.</p>
+  <p>[P10] <strong>Nurturing Highly Qualified Human Resources</strong> (03/2006~12/2007) : Brain Korea 21 Project funded by the Ministry of Education and Human Resources Development of Korea.</p>
+  <p>[P11] <strong>Vision/Speech SoC (System on a Chip)</strong> (04/2006~03/2009) : 21st Century Frontier R&amp;D Program funded by the Ministry of Commerce, Industry and Energy of Korea.</p>
+</div>
+<div id="endofpage">
+		<div style="width:900px;margin:0pt auto;padding-top:5px;padding-bottom:5px">
+			Copyright &#169; 2009 - Designed by Junguk Cho. Updated October 20, 2009.		</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* CSS Document */
+
+body {margin:0;padding:0;font-family:verdana;font-size:9pt;
+background:url(bgheader.gif) repeat-x top left scroll;
+}
+p {white-space:normal}
+
+a {color:#000000;text-decoration:none}
+a:hover {color:#ffffff;}
+
+div#menu ul#menulist li a {color:#FFFFFF}
+div.sidebarnavitem:hover{background-color:#99CC00;}
+div.sidebarnavitem a:hover{color:#FFFFFF}
+
+
+#wrapper {
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:auto;
+	margin-top:3em;
+}
+
+#header {
+	width:100%;
+	/*background-image:url(/images/bgheader.gif); */
+	height:150px;
+}
+
+#headerpic {
+	text-align:right;
+}
+
+#header h1 {}
+
+#nav {
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+}
+
+.navitem {
+	float:left;
+	width:100px;
+	padding:5px;
+	border-left:1px dotted #6F9C03;
+	border-bottom:1px dotted #6F9C03;
+	margin-right:3px;
+	background-color:#BEFE5F;
+}
+
+#menu {
+	text-align:center;
+	width:900px;
+	margin:0pt auto;
+}
+
+li {
+	list-style-type:none;
+	display:inline;
+	margin-right:20px;
+	/* background-color:#00b0f1; */
+	background-color:#55caf5;
+	padding:5px 20px;
+	text-align:center;
+	color:#FFFFFF;
+
+}
+
+li:hover{
+	background-color:#99CC00;
+
+}
+
+#middle {
+	width:620px;
+	float:left;
+	margin-top:5px;
+	padding-right:20px;
+	border-right:1px dashed #bfbfbf;
+}
+
+#sidebar {
+	width:220px;
+	margin-top:15px;
+	margin-left:670px;
+}
+
+#footer {
+	width:100%;
+	background-image:url(bgfooter.gif);
+	background-repeat:repeat-x;
+	overflow:auto;
+	border-top:1px dashed #bfbfbf;
+}
+
+#footercontent {
+	width:900px;
+	margin:0pt auto;
+	padding-bottom:10px;
+	padding-top:10px;
+	overflow:auto;
+}
+
+.label {
+	color:#000000;
+	width:250px;
+	float:left;
+	text-align:left;
+}
+
+.sublinkitem {
+	border-bottom:1px dotted #bfbfbf;
+	padding-top:4px;
+	padding-bottom:4px;
+	width:200px;
+}
+
+#endofpage {
+	width:100%;
+	background-color:#26aada;
+	color:#FFFFFF;
+	font-size:7pt;
+	border-top:1px dashed #00b0f1;
+	margin-top:50px;
+}
+
+
+div.sidebarnavitem {
+	border-bottom:1px dashed #bfbfbf;
+	padding-top:6px;
+	padding-bottom:2px;
+	text-align:right;
+}
+
+#linksnav {
+	margin-top:25px;
+}
+
+#headerpic {
+	/*background:url(cloud1.gif) top right scroll no-repeat; */
+	width:100%;
+}

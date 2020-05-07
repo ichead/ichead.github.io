@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Pictures | Junguk Cho</title>
+<link rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="functions.js">
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 16pt;
+	font-weight: bold;
+}
+.style2 {
+	font-size: 12pt;
+	font-weight: bold;
+}
+a:hover {
+	color: #999999;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="header">
+		<div id="headerpic"><img src="images/cloud1.gif" width="800" height="153" /></div>
+</div>
+<div id="menu">
+	<ul id="menulist">
+    	<li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="biography.html">Biography</a></li>
+        <li><a href="pictures.html">Pictures</a></li>
+    </ul>
+</div>
+<div id="wrapper">
+  <p class="style1">Pictures</p>
+
+<script type="text/javascript">
+var sliderwidth="886px"  //Scroll width
+var sliderheight="170px"  //Scroll height
+var slidespeed="1"  
+    slidebgcolor="#ffffff"  //Scroll background
+
+var leftarrowimage = "https://www.iconninja.com/files/975/585/95/small-arrow-left-icon.png"
+var rightarrowimage = "http://cs.ucsd.edu/~j10cho/images/arrow_r.gif"
+
+var leftrightslide=new Array()
+var finalslide=''
+
+
+    leftrightslide[0]='<img src=images/ucsd.jpg border=0>'
+    leftrightslide[1]='<img src=images/sanya.jpg border=0>'
+    leftrightslide[2]='<img src=images/tokyo.jpg border=0>'
+    leftrightslide[3]='<img src=images/rome.jpg border=0>'
+    leftrightslide[4]='<img src=images/aichi.jpg border=0>'
+    leftrightslide[5]='<img src=images/lasvegas.jpg border=0>'
+    leftrightslide[6]='<img src=images/seolak.jpg border=0>'
+    leftrightslide[7]='<img src=images/jeju.jpg border=0>'
+
+
+var imagegap=""
+var slideshowgap=0
+
+var copyspeed=slidespeed
+    leftrightslide='<nobr>'+leftrightslide.join(imagegap)+'</nobr>'
+var iedom=document.all||document.getElementById
+    if (iedom)
+        document.write('<span id="temp" style="visibility:hidden;position:absolute;top:-100px;left:-9000px">'+leftrightslide+'</span>')
+
+var actualwidth=''
+var cross_slide, ns_slide
+var righttime,lefttime
+
+function fillup(){
+    if (iedom){
+        cross_slide=document.getElementById? document.getElementById("test2") : document.all.test2
+        cross_slide2=document.getElementById? document.getElementById("test3") : document.all.test3
+        cross_slide.innerHTML=cross_slide2.innerHTML=leftrightslide
+        actualwidth=document.all? cross_slide.offsetWidth : document.getElementById("temp").offsetWidth
+        cross_slide2.style.left=actualwidth+slideshowgap+"px"
+    }
+    else if (document.layers){
+        ns_slide=document.ns_slidemenu.document.ns_slidemenuorange
+        ns_slide2=document.ns_slidemenu.document.ns_slidemenu3
+        ns_slide.document.write(leftrightslide)
+        ns_slide.document.close()
+        actualwidth=ns_slide.document.width
+        ns_slide2.left=actualwidth+slideshowgap
+        ns_slide2.document.write(leftrightslide)
+        ns_slide2.document.close()
+    }
+    lefttime=setInterval("slideleft()",30)
+}
+window.onload=fillup
+
+function slideleft(){
+    if (iedom){
+    if (parseInt(cross_slide.style.left)>(actualwidth*(-1)+8))
+        cross_slide.style.left=parseInt(cross_slide.style.left)-copyspeed+"px"
+    else
+        cross_slide.style.left=parseInt(cross_slide2.style.left)+actualwidth+slideshowgap+"px"
+    if (parseInt(cross_slide2.style.left)>(actualwidth*(-1)+8))
+        cross_slide2.style.left=parseInt(cross_slide2.style.left)-copyspeed+"px"
+    else
+        cross_slide2.style.left=parseInt(cross_slide.style.left)+actualwidth+slideshowgap+"px"
+    }
+    else if (document.layers){
+    if (ns_slide.left>(actualwidth*(-1)+8))
+        ns_slide.left-=copyspeed
+    else
+        ns_slide.left=ns_slide2.left+actualwidth+slideshowgap
+    if (ns_slide2.left>(actualwidth*(-1)+8))
+        ns_slide2.left-=copyspeed
+    else
+        ns_slide2.left=ns_slide.left+actualwidth+slideshowgap
+    }
+}
+
+function slideright(){
+    if (iedom){
+    if (parseInt(cross_slide.style.left)<(actualwidth+8))
+        cross_slide.style.left=parseInt(cross_slide.style.left)+copyspeed+"px"
+    else
+        cross_slide.style.left=parseInt(cross_slide2.style.left)+actualwidth*(-1)+slideshowgap+"px"
+    if (parseInt(cross_slide2.style.left)<(actualwidth+8))
+        cross_slide2.style.left=parseInt(cross_slide2.style.left)+copyspeed+"px"
+    else
+        cross_slide2.style.left=parseInt(cross_slide.style.left)+actualwidth*(-1)+slideshowgap+"px"
+    }
+    else if (document.layers){
+    if (ns_slide.left>(actualwidth*(-1)+8))
+        ns_slide.left-=copyspeed
+    else
+        ns_slide.left=ns_slide2.left+actualwidth+slideshowgap
+    if (ns_slide2.left>(actualwidth*(-1)+8))
+        ns_slide2.left-=copyspeed
+    else
+        ns_slide2.left=ns_slide.left+actualwidth+slideshowgap
+    }
+}
+
+function right(){
+    if(lefttime){
+        clearInterval(lefttime)
+        clearInterval(righttime)
+        righttime=setInterval("slideright()",30)  
+    }
+}
+
+function left(){
+    if(righttime){
+        clearInterval(lefttime)
+        clearInterval(righttime)
+        lefttime=setInterval("slideleft()",30)  
+    }
+}
+    document.write('<table width='+sliderwidth+' border="0" cellspacing="0" cellpadding="0">');
+    document.write('<tr><td align=center valign=middle width=20><img src='+leftarrowimage+' onMouseover="left(); copyspeed=2" onMouseout="copyspeed=1" style="cursor:hand"></td>')
+
+
+    if (iedom||document.layers){
+        with (document){
+            document.write('<td>')
+    if (iedom){
+        write('<div style="position:relative;width:'+sliderwidth+';height:'+sliderheight+';overflow:hidden">')
+        write('<div style="position:absolute;width:'+sliderwidth+';height:'+sliderheight+';background-color:'+slidebgcolor+'" onMouseover="copyspeed=0" onMouseout="copyspeed=1">')
+        write('<div id="test2" style="position:absolute;left:0px;top:0px"></div>')
+        write('<div id="test3" style="position:absolute;left:-1000px;top:0px"></div>')
+        write('</div></div>')
+    }
+    else if (document.layers){
+        write('<ilayer width='+sliderwidth+' height='+sliderheight+' name="ns_slidemenu" bgColor='+slidebgcolor+'>')
+        write('<layer name="ns_slidemenuorange" left=0 top=0 onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed"></layer>')
+        write('<layer name="ns_slidemenu3" left=0 top=0 onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed"></layer>')
+        write('</ilayer>')
+    }
+    document.write('</td>')
+    }
+}
+
+document.write('<td width="20" align=center valign=middle><img src='+rightarrowimage+' onMouseover="right();copyspeed=2" onMouseout="copyspeed=1" style="cursor:hand"></td></tr></table>')
+
+</script>
+
+</div>
+<div id="endofpage">
+		<div style="width:900px;margin:0pt auto;padding-top:5px;padding-bottom:5px">
+			Copyright &#169; 2009 - Designed by Junguk Cho. Updated June 16, 2009.
+		</div>
+</div>
+</body>
+</html>
